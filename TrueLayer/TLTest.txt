@@ -10,3 +10,12 @@ FILE="true/TrueLayer/TLTest.txt"
 basename "$FILE"
 f="$(basename -- $FILE)"
 echo "$f"
+
+                #Full list of every file and folder name present in the running folder
+
+
+                # Publi IP used to reach the internet
+curl ipinfo.io/ip
+
+                #Ram available in MB
+free -m
