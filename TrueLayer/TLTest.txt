@@ -1,17 +1,12 @@
 #!/bin/bash
-
-
-                HELLO=Hello 
-                function hello {
-                        local HELLO=World
-                        echo $HELLO
-                }
-                echo $HELLO
-                hello
-                echo $HELLO
-                
-                
+                                
                 # Define a timestamp function
 timestamp() {
   date +"%T"
 }
+
+                # Get file name and extenstion
+FILE="true/TrueLayer/TLTest.txt"
+basename "$FILE"
+f="$(basename -- $FILE)"
+echo "$f"
