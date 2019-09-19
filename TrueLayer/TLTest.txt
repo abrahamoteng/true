@@ -1,4 +1,6 @@
 #!/bin/bash
+
+
                 HELLO=Hello 
                 function hello {
                         local HELLO=World
@@ -7,3 +9,9 @@
                 echo $HELLO
                 hello
                 echo $HELLO
+                
+                
+                # Define a timestamp function
+timestamp() {
+  date +"%T"
+}
