@@ -12,10 +12,31 @@ f="$(basename -- $FILE)"
 echo "$f"
 
                 #Full list of every file and folder name present in the running folder
-
+for entry in "$search_dir"/*
+do
+  echo "$entry"
+done
 
                 # Publi IP used to reach the internet
 curl ipinfo.io/ip
 
                 #Ram available in MB
 free -m
+
+                #The PID and the name of the user that is executing the script
+printf '%s\n' "${SUDO_USER:-$USER}"
+
+
+#Key features of an IT asset management tool would need to cover the following requirements;
+#•	Integration within other systems
+#•	Audit (notification, tracking and reporting)
+#•	Relevant/ real time data 
+#•	Simple GUI (graphical user interface)
+#•	Efficient (preferably an online portal) 
+
+
+#As True Layer expand some features, they will face are:
+#•	Miscommunication (language barrier)
+#•	Culture differences and beliefs
+#•	Time difference e.g. communicating with users within a different time zone 
+
